@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.shape {
+    position: absolute;
+    inset-inline-end: 0px;
+    bottom: -1px;
+    inset-inline-start: 0px;
+}
+.shape > svg {
+    height: auto;
+    width: 100%;
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    -webkit-transform-origin: top center;
+    transform-origin: top center;
+}
+@media (max-width: 425px) {
+    .shape {
+        bottom: -2px;
+    }
+}
