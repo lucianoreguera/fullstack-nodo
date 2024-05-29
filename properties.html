@@ -14,7 +14,7 @@
         <div
           class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
         >
-          <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <a href="#" class="flex items-center space-x-3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -35,9 +35,7 @@
               >Inmobiliaria</span
             >
           </a>
-          <div
-            class="flex md:gap-2 md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse"
-          >
+          <div class="flex md:gap-2 md:order-2 space-x-3 md:space-x-0">
             <button
               id="theme-toggle"
               type="button"
@@ -125,20 +123,20 @@
             id="navbar-sticky"
           >
             <ul
-              class="flex flex-col p-4 md:p-0 mt-4 text-lg font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+              class="flex flex-col p-4 md:p-0 mt-4 text-lg font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
             >
               <li>
                 <a
                   href="index.html"
-                  class="block py-2 px-3 text-white bg-green-500 font-bold rounded md:bg-transparent md:text-green-600 md:p-0"
-                  aria-current="page"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-600 md:p-0 md:dark:hover:text-green-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                   >Inicio</a
                 >
               </li>
               <li>
                 <a
                   href="properties.html"
-                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-600 md:p-0 md:dark:hover:text-green-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  class="block py-2 px-3 text-white bg-green-500 font-bold rounded md:bg-transparent md:text-green-600 md:p-0"
+                  aria-current="page"
                   >Propiedades</a
                 >
               </li>
@@ -181,8 +179,15 @@
       </section>
       <div class="relative">
         <div class="shape overflow-hidden z-1 text-white dark:text-slate-900">
-          <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+          <svg
+            viewBox="0 0 2880 48"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z"
+              fill="currentColor"
+            ></path>
           </svg>
         </div>
       </div>
@@ -191,30 +196,55 @@
         <div class="container relative">
           <div class="grid md:grid-cols-12 grid-cols-1 gap-[30px]">
             <div class="lg:col-span-4 md:col-span-6">
-              <div class="shadow dark:shadow-gray-700 p-6 rounded-xl bg-white dark:bg-slate-900 sticky top-20">
+              <div
+                class="shadow dark:shadow-gray-700 p-6 rounded-xl bg-white dark:bg-slate-900 sticky top-20"
+              >
                 <form>
                   <div class="grid grid-cols-1 gap-3">
                     <div>
-                      <label for="search" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Buscar</label>
+                      <label
+                        for="search"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                        >Buscar</label
+                      >
                       <div class="relative">
-                        <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-                          <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                            fill="none" viewBox="0 0 20 20">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                              d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                        <div
+                          class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
+                        >
+                          <svg
+                            class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 20 20"
+                          >
+                            <path
+                              stroke="currentColor"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                            />
                           </svg>
                         </div>
-                        <input type="search" id="default-search"
+                        <input
+                          type="search"
+                          id="default-search"
                           class="block w-full p-2.5 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-green-500 focus:border-green-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500"
-                          placeholder="Criterio de búsqueda..." 
-                          required 
+                          placeholder="Criterio de búsqueda..."
+                          required
                         />
                       </div>
                     </div>
-                          
+
                     <div>
-                      <label for="categories" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Categorías</label>
-                      <select id="categories"
+                      <label
+                        for="categories"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                        >Categorías</label
+                      >
+                      <select
+                        id="categories"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500"
                       >
                         <option selected>-- Selecciona --</option>
@@ -224,11 +254,17 @@
                         <option value="T">Temporarios</option>
                       </select>
                     </div>
-      
+
                     <div>
-                      <label for="location" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ubicación</label>
-                      <select id="location"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500">
+                      <label
+                        for="location"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                        >Ubicación</label
+                      >
+                      <select
+                        id="location"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500"
+                      >
                         <option selected>-- Selecciona --</option>
                         <option value="SFDV">Capital</option>
                         <option value="VV">Valle Viejo</option>
@@ -236,63 +272,99 @@
                         <option value="CA">Capayan</option>
                       </select>
                     </div>
-      
+
                     <div>
-                      <button 
-                        type="button" 
+                      <button
+                        type="button"
                         class="w-full text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 focus:outline-none dark:focus:ring-green-800"
-                      >Aplicar Filtros</button>
+                      >
+                        Aplicar Filtros
+                      </button>
                     </div>
                   </div>
                 </form>
               </div>
-            </div><!--end col-->
-      
+            </div>
+            <!--end col-->
+
             <div class="lg:col-span-8 md:col-span-6">
               <div class="grid lg:grid-cols-2 grid-cols-1 gap-[30px]">
                 <div
                   class="group rounded-xl bg-white dark:bg-slate-900 shadow hover:shadow-xl dark:hover:shadow-xl dark:shadow-gray-700 dark:hover:shadow-gray-700 overflow-hidden ease-in-out duration-500 dark:text-white"
                 >
                   <div class="relative">
-                    <img src="https://imgar.zonapropcdn.com/avisos/resize/1/00/53/36/27/13/1200x1200/1904615365.jpg?isFirstImage=true"
-                      alt="Imagen Propiedad" />
-                
+                    <img
+                      src="https://imgar.zonapropcdn.com/avisos/resize/1/00/53/36/27/13/1200x1200/1904615365.jpg?isFirstImage=true"
+                      alt="Imagen Propiedad"
+                    />
+
                     <div class="absolute top-4 end-4">
-                      <a href="javascript:void(0)"
-                        class="w-10 h-10 inline-flex items-center justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-full text-slate-100 dark:text-slate-700 focus:text-red-600 dark:focus:text-red-600 hover:text-red-600 dark:hover:text-red-600"><i
-                          class="text-[20px]">
-                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                      <a
+                        href="javascript:void(0)"
+                        class="w-10 h-10 inline-flex items-center justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-full text-slate-100 dark:text-slate-700 focus:text-red-600 dark:focus:text-red-600 hover:text-red-600 dark:hover:text-red-600"
+                        ><i class="text-[20px]">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                            class="size-6"
+                          >
                             <path
-                              d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
+                              d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z"
+                            />
                           </svg>
                         </i>
                       </a>
                     </div>
                   </div>
-                
+
                   <div class="p-6">
                     <div class="pb-6">
-                      <a href="property-detail.html" class="text-lg hover:text-green-600 font-medium ease-in-out duration-500">Av.
-                        Güemes 1234, San Fernando del Valle de Catamarca,
-                        Catamarca, Argentina</a>
+                      <a
+                        href="property-detail.html"
+                        class="text-lg hover:text-green-600 font-medium ease-in-out duration-500"
+                        >Av. Güemes 1234, San Fernando del Valle de Catamarca,
+                        Catamarca, Argentina</a
+                      >
                     </div>
-                
-                    <ul class="py-6 border-y border-slate-100 dark:border-gray-800 flex items-center list-none gap-4">
+
+                    <ul
+                      class="py-6 border-y border-slate-100 dark:border-gray-800 flex items-center list-none gap-4"
+                    >
                       <li class="flex items-center me-4">
                         <i class="text-2xl me-2 text-green-600">
-                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="h-6 w-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                              d="M9 9V4.5M9 9H4.5M9 9 3.75 3.75M9 15v4.5M9 15H4.5M9 15l-5.25 5.25M15 9h4.5M15 9V4.5M15 9l5.25-5.25M15 15h4.5M15 15v4.5m0-4.5 5.25 5.25" />
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="h-6 w-6"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M9 9V4.5M9 9H4.5M9 9 3.75 3.75M9 15v4.5M9 15H4.5M9 15l-5.25 5.25M15 9h4.5M15 9V4.5M15 9l5.25-5.25M15 15h4.5M15 15v4.5m0-4.5 5.25 5.25"
+                            />
                           </svg>
                         </i>
                         <span>250 mts<sup>2</sup></span>
                       </li>
-                
+
                       <li class="flex items-center me-4">
                         <i class="text-2xl me-2 text-green-600">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="h-6 w-6"
+                          >
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <path d="M7 9m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
                             <path d="M22 17v-3h-20" />
@@ -302,14 +374,25 @@
                         </i>
                         <span>3 Hab</span>
                       </li>
-                
+
                       <li class="flex items-center">
                         <i class="text-2xl me-2 text-green-600">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="icon icon-tabler icons-tabler-outline icon-tabler-bath">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-bath"
+                          >
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <path d="M4 12h16a1 1 0 0 1 1 1v3a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4v-3a1 1 0 0 1 1 -1z" />
+                            <path
+                              d="M4 12h16a1 1 0 0 1 1 1v3a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4v-3a1 1 0 0 1 1 -1z"
+                            />
                             <path d="M6 12v-7a2 2 0 0 1 2 -2h3v2.25" />
                             <path d="M4 21l1 -1.5" />
                             <path d="M20 21l-1 -1.5" />
@@ -318,62 +401,103 @@
                         <span>2 Baños</span>
                       </li>
                     </ul>
-                
-                    <ul class="pt-6 flex justify-between items-center list-none">
+
+                    <ul
+                      class="pt-6 flex justify-between items-center list-none"
+                    >
                       <li>
                         <span class="text-slate-400">Precio</span>
                         <p class="text-lg font-medium">$150000</p>
                       </li>
-                
+
                       <li>
                         <span class="text-slate-400">Rating</span>
-                        <ul class="text-lg font-medium text-amber-400 list-none flex justify-between gap-1">
+                        <ul
+                          class="text-lg font-medium text-amber-400 list-none flex justify-between gap-1"
+                        >
                           <li class="inline">
                             <i>
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                <path fill-rule="evenodd"
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                class="size-6"
+                              >
+                                <path
+                                  fill-rule="evenodd"
                                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                                  clip-rule="evenodd" />
+                                  clip-rule="evenodd"
+                                />
                               </svg>
                             </i>
                           </li>
                           <li class="inline">
                             <i>
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                <path fill-rule="evenodd"
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                class="size-6"
+                              >
+                                <path
+                                  fill-rule="evenodd"
                                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                                  clip-rule="evenodd" />
+                                  clip-rule="evenodd"
+                                />
                               </svg>
                             </i>
                           </li>
                           <li class="inline">
                             <i>
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                <path fill-rule="evenodd"
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                class="size-6"
+                              >
+                                <path
+                                  fill-rule="evenodd"
                                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                                  clip-rule="evenodd" />
+                                  clip-rule="evenodd"
+                                />
                               </svg>
                             </i>
                           </li>
                           <li class="inline">
                             <i>
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                <path fill-rule="evenodd"
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                class="size-6"
+                              >
+                                <path
+                                  fill-rule="evenodd"
                                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                                  clip-rule="evenodd" />
+                                  clip-rule="evenodd"
+                                />
                               </svg>
                             </i>
                           </li>
                           <li class="inline">
                             <i>
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                <path fill-rule="evenodd"
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                class="size-6"
+                              >
+                                <path
+                                  fill-rule="evenodd"
                                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                                  clip-rule="evenodd" />
+                                  clip-rule="evenodd"
+                                />
                               </svg>
                             </i>
                           </li>
-                          <li class="inline text-black dark:text-white">5.0(30)</li>
+                          <li class="inline text-black dark:text-white">
+                            5.0(30)
+                          </li>
                         </ul>
                       </li>
                     </ul>
@@ -383,45 +507,78 @@
                   class="group rounded-xl bg-white dark:bg-slate-900 shadow hover:shadow-xl dark:hover:shadow-xl dark:shadow-gray-700 dark:hover:shadow-gray-700 overflow-hidden ease-in-out duration-500 dark:text-white"
                 >
                   <div class="relative">
-                    <img src="https://imgar.zonapropcdn.com/avisos/resize/1/00/53/36/27/13/1200x1200/1904615365.jpg?isFirstImage=true"
-                      alt="Imagen Propiedad" />
-                
+                    <img
+                      src="https://imgar.zonapropcdn.com/avisos/resize/1/00/53/36/27/13/1200x1200/1904615365.jpg?isFirstImage=true"
+                      alt="Imagen Propiedad"
+                    />
+
                     <div class="absolute top-4 end-4">
-                      <a href="javascript:void(0)"
-                        class="w-10 h-10 inline-flex items-center justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-full text-slate-100 dark:text-slate-700 focus:text-red-600 dark:focus:text-red-600 hover:text-red-600 dark:hover:text-red-600"><i
-                          class="text-[20px]">
-                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                      <a
+                        href="javascript:void(0)"
+                        class="w-10 h-10 inline-flex items-center justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-full text-slate-100 dark:text-slate-700 focus:text-red-600 dark:focus:text-red-600 hover:text-red-600 dark:hover:text-red-600"
+                        ><i class="text-[20px]">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                            class="size-6"
+                          >
                             <path
-                              d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
+                              d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z"
+                            />
                           </svg>
                         </i>
                       </a>
                     </div>
                   </div>
-                
+
                   <div class="p-6">
                     <div class="pb-6">
-                      <a href="property-detail.html" class="text-lg hover:text-green-600 font-medium ease-in-out duration-500">Av.
-                        Güemes 1234, San Fernando del Valle de Catamarca,
-                        Catamarca, Argentina</a>
+                      <a
+                        href="property-detail.html"
+                        class="text-lg hover:text-green-600 font-medium ease-in-out duration-500"
+                        >Av. Güemes 1234, San Fernando del Valle de Catamarca,
+                        Catamarca, Argentina</a
+                      >
                     </div>
-                
-                    <ul class="py-6 border-y border-slate-100 dark:border-gray-800 flex items-center list-none gap-4">
+
+                    <ul
+                      class="py-6 border-y border-slate-100 dark:border-gray-800 flex items-center list-none gap-4"
+                    >
                       <li class="flex items-center me-4">
                         <i class="text-2xl me-2 text-green-600">
-                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="h-6 w-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                              d="M9 9V4.5M9 9H4.5M9 9 3.75 3.75M9 15v4.5M9 15H4.5M9 15l-5.25 5.25M15 9h4.5M15 9V4.5M15 9l5.25-5.25M15 15h4.5M15 15v4.5m0-4.5 5.25 5.25" />
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="h-6 w-6"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M9 9V4.5M9 9H4.5M9 9 3.75 3.75M9 15v4.5M9 15H4.5M9 15l-5.25 5.25M15 9h4.5M15 9V4.5M15 9l5.25-5.25M15 15h4.5M15 15v4.5m0-4.5 5.25 5.25"
+                            />
                           </svg>
                         </i>
                         <span>250 mts<sup>2</sup></span>
                       </li>
-                
+
                       <li class="flex items-center me-4">
                         <i class="text-2xl me-2 text-green-600">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="h-6 w-6"
+                          >
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <path d="M7 9m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
                             <path d="M22 17v-3h-20" />
@@ -431,14 +588,25 @@
                         </i>
                         <span>3 Hab</span>
                       </li>
-                
+
                       <li class="flex items-center">
                         <i class="text-2xl me-2 text-green-600">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="icon icon-tabler icons-tabler-outline icon-tabler-bath">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-bath"
+                          >
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <path d="M4 12h16a1 1 0 0 1 1 1v3a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4v-3a1 1 0 0 1 1 -1z" />
+                            <path
+                              d="M4 12h16a1 1 0 0 1 1 1v3a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4v-3a1 1 0 0 1 1 -1z"
+                            />
                             <path d="M6 12v-7a2 2 0 0 1 2 -2h3v2.25" />
                             <path d="M4 21l1 -1.5" />
                             <path d="M20 21l-1 -1.5" />
@@ -447,62 +615,103 @@
                         <span>2 Baños</span>
                       </li>
                     </ul>
-                
-                    <ul class="pt-6 flex justify-between items-center list-none">
+
+                    <ul
+                      class="pt-6 flex justify-between items-center list-none"
+                    >
                       <li>
                         <span class="text-slate-400">Precio</span>
                         <p class="text-lg font-medium">$150000</p>
                       </li>
-                
+
                       <li>
                         <span class="text-slate-400">Rating</span>
-                        <ul class="text-lg font-medium text-amber-400 list-none flex justify-between gap-1">
+                        <ul
+                          class="text-lg font-medium text-amber-400 list-none flex justify-between gap-1"
+                        >
                           <li class="inline">
                             <i>
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                <path fill-rule="evenodd"
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                class="size-6"
+                              >
+                                <path
+                                  fill-rule="evenodd"
                                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                                  clip-rule="evenodd" />
+                                  clip-rule="evenodd"
+                                />
                               </svg>
                             </i>
                           </li>
                           <li class="inline">
                             <i>
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                <path fill-rule="evenodd"
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                class="size-6"
+                              >
+                                <path
+                                  fill-rule="evenodd"
                                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                                  clip-rule="evenodd" />
+                                  clip-rule="evenodd"
+                                />
                               </svg>
                             </i>
                           </li>
                           <li class="inline">
                             <i>
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                <path fill-rule="evenodd"
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                class="size-6"
+                              >
+                                <path
+                                  fill-rule="evenodd"
                                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                                  clip-rule="evenodd" />
+                                  clip-rule="evenodd"
+                                />
                               </svg>
                             </i>
                           </li>
                           <li class="inline">
                             <i>
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                <path fill-rule="evenodd"
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                class="size-6"
+                              >
+                                <path
+                                  fill-rule="evenodd"
                                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                                  clip-rule="evenodd" />
+                                  clip-rule="evenodd"
+                                />
                               </svg>
                             </i>
                           </li>
                           <li class="inline">
                             <i>
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                <path fill-rule="evenodd"
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                class="size-6"
+                              >
+                                <path
+                                  fill-rule="evenodd"
                                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                                  clip-rule="evenodd" />
+                                  clip-rule="evenodd"
+                                />
                               </svg>
                             </i>
                           </li>
-                          <li class="inline text-black dark:text-white">5.0(30)</li>
+                          <li class="inline text-black dark:text-white">
+                            5.0(30)
+                          </li>
                         </ul>
                       </li>
                     </ul>
@@ -512,45 +721,78 @@
                   class="group rounded-xl bg-white dark:bg-slate-900 shadow hover:shadow-xl dark:hover:shadow-xl dark:shadow-gray-700 dark:hover:shadow-gray-700 overflow-hidden ease-in-out duration-500 dark:text-white"
                 >
                   <div class="relative">
-                    <img src="https://imgar.zonapropcdn.com/avisos/resize/1/00/53/36/27/13/1200x1200/1904615365.jpg?isFirstImage=true"
-                      alt="Imagen Propiedad" />
-                
+                    <img
+                      src="https://imgar.zonapropcdn.com/avisos/resize/1/00/53/36/27/13/1200x1200/1904615365.jpg?isFirstImage=true"
+                      alt="Imagen Propiedad"
+                    />
+
                     <div class="absolute top-4 end-4">
-                      <a href="javascript:void(0)"
-                        class="w-10 h-10 inline-flex items-center justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-full text-slate-100 dark:text-slate-700 focus:text-red-600 dark:focus:text-red-600 hover:text-red-600 dark:hover:text-red-600"><i
-                          class="text-[20px]">
-                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                      <a
+                        href="javascript:void(0)"
+                        class="w-10 h-10 inline-flex items-center justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-full text-slate-100 dark:text-slate-700 focus:text-red-600 dark:focus:text-red-600 hover:text-red-600 dark:hover:text-red-600"
+                        ><i class="text-[20px]">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                            class="size-6"
+                          >
                             <path
-                              d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
+                              d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z"
+                            />
                           </svg>
                         </i>
                       </a>
                     </div>
                   </div>
-                
+
                   <div class="p-6">
                     <div class="pb-6">
-                      <a href="property-detail.html" class="text-lg hover:text-green-600 font-medium ease-in-out duration-500">Av.
-                        Güemes 1234, San Fernando del Valle de Catamarca,
-                        Catamarca, Argentina</a>
+                      <a
+                        href="property-detail.html"
+                        class="text-lg hover:text-green-600 font-medium ease-in-out duration-500"
+                        >Av. Güemes 1234, San Fernando del Valle de Catamarca,
+                        Catamarca, Argentina</a
+                      >
                     </div>
-                
-                    <ul class="py-6 border-y border-slate-100 dark:border-gray-800 flex items-center list-none gap-4">
+
+                    <ul
+                      class="py-6 border-y border-slate-100 dark:border-gray-800 flex items-center list-none gap-4"
+                    >
                       <li class="flex items-center me-4">
                         <i class="text-2xl me-2 text-green-600">
-                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="h-6 w-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                              d="M9 9V4.5M9 9H4.5M9 9 3.75 3.75M9 15v4.5M9 15H4.5M9 15l-5.25 5.25M15 9h4.5M15 9V4.5M15 9l5.25-5.25M15 15h4.5M15 15v4.5m0-4.5 5.25 5.25" />
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="h-6 w-6"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M9 9V4.5M9 9H4.5M9 9 3.75 3.75M9 15v4.5M9 15H4.5M9 15l-5.25 5.25M15 9h4.5M15 9V4.5M15 9l5.25-5.25M15 15h4.5M15 15v4.5m0-4.5 5.25 5.25"
+                            />
                           </svg>
                         </i>
                         <span>250 mts<sup>2</sup></span>
                       </li>
-                
+
                       <li class="flex items-center me-4">
                         <i class="text-2xl me-2 text-green-600">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="h-6 w-6"
+                          >
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <path d="M7 9m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
                             <path d="M22 17v-3h-20" />
@@ -560,14 +802,25 @@
                         </i>
                         <span>3 Hab</span>
                       </li>
-                
+
                       <li class="flex items-center">
                         <i class="text-2xl me-2 text-green-600">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="icon icon-tabler icons-tabler-outline icon-tabler-bath">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-bath"
+                          >
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <path d="M4 12h16a1 1 0 0 1 1 1v3a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4v-3a1 1 0 0 1 1 -1z" />
+                            <path
+                              d="M4 12h16a1 1 0 0 1 1 1v3a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4v-3a1 1 0 0 1 1 -1z"
+                            />
                             <path d="M6 12v-7a2 2 0 0 1 2 -2h3v2.25" />
                             <path d="M4 21l1 -1.5" />
                             <path d="M20 21l-1 -1.5" />
@@ -576,62 +829,103 @@
                         <span>2 Baños</span>
                       </li>
                     </ul>
-                
-                    <ul class="pt-6 flex justify-between items-center list-none">
+
+                    <ul
+                      class="pt-6 flex justify-between items-center list-none"
+                    >
                       <li>
                         <span class="text-slate-400">Precio</span>
                         <p class="text-lg font-medium">$150000</p>
                       </li>
-                
+
                       <li>
                         <span class="text-slate-400">Rating</span>
-                        <ul class="text-lg font-medium text-amber-400 list-none flex justify-between gap-1">
+                        <ul
+                          class="text-lg font-medium text-amber-400 list-none flex justify-between gap-1"
+                        >
                           <li class="inline">
                             <i>
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                <path fill-rule="evenodd"
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                class="size-6"
+                              >
+                                <path
+                                  fill-rule="evenodd"
                                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                                  clip-rule="evenodd" />
+                                  clip-rule="evenodd"
+                                />
                               </svg>
                             </i>
                           </li>
                           <li class="inline">
                             <i>
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                <path fill-rule="evenodd"
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                class="size-6"
+                              >
+                                <path
+                                  fill-rule="evenodd"
                                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                                  clip-rule="evenodd" />
+                                  clip-rule="evenodd"
+                                />
                               </svg>
                             </i>
                           </li>
                           <li class="inline">
                             <i>
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                <path fill-rule="evenodd"
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                class="size-6"
+                              >
+                                <path
+                                  fill-rule="evenodd"
                                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                                  clip-rule="evenodd" />
+                                  clip-rule="evenodd"
+                                />
                               </svg>
                             </i>
                           </li>
                           <li class="inline">
                             <i>
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                <path fill-rule="evenodd"
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                class="size-6"
+                              >
+                                <path
+                                  fill-rule="evenodd"
                                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                                  clip-rule="evenodd" />
+                                  clip-rule="evenodd"
+                                />
                               </svg>
                             </i>
                           </li>
                           <li class="inline">
                             <i>
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                <path fill-rule="evenodd"
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                class="size-6"
+                              >
+                                <path
+                                  fill-rule="evenodd"
                                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                                  clip-rule="evenodd" />
+                                  clip-rule="evenodd"
+                                />
                               </svg>
                             </i>
                           </li>
-                          <li class="inline text-black dark:text-white">5.0(30)</li>
+                          <li class="inline text-black dark:text-white">
+                            5.0(30)
+                          </li>
                         </ul>
                       </li>
                     </ul>
@@ -641,45 +935,78 @@
                   class="group rounded-xl bg-white dark:bg-slate-900 shadow hover:shadow-xl dark:hover:shadow-xl dark:shadow-gray-700 dark:hover:shadow-gray-700 overflow-hidden ease-in-out duration-500 dark:text-white"
                 >
                   <div class="relative">
-                    <img src="https://imgar.zonapropcdn.com/avisos/resize/1/00/53/36/27/13/1200x1200/1904615365.jpg?isFirstImage=true"
-                      alt="Imagen Propiedad" />
-                
+                    <img
+                      src="https://imgar.zonapropcdn.com/avisos/resize/1/00/53/36/27/13/1200x1200/1904615365.jpg?isFirstImage=true"
+                      alt="Imagen Propiedad"
+                    />
+
                     <div class="absolute top-4 end-4">
-                      <a href="javascript:void(0)"
-                        class="w-10 h-10 inline-flex items-center justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-full text-slate-100 dark:text-slate-700 focus:text-red-600 dark:focus:text-red-600 hover:text-red-600 dark:hover:text-red-600"><i
-                          class="text-[20px]">
-                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                      <a
+                        href="javascript:void(0)"
+                        class="w-10 h-10 inline-flex items-center justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-full text-slate-100 dark:text-slate-700 focus:text-red-600 dark:focus:text-red-600 hover:text-red-600 dark:hover:text-red-600"
+                        ><i class="text-[20px]">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                            class="size-6"
+                          >
                             <path
-                              d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
+                              d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z"
+                            />
                           </svg>
                         </i>
                       </a>
                     </div>
                   </div>
-                
+
                   <div class="p-6">
                     <div class="pb-6">
-                      <a href="property-detail.html" class="text-lg hover:text-green-600 font-medium ease-in-out duration-500">Av.
-                        Güemes 1234, San Fernando del Valle de Catamarca,
-                        Catamarca, Argentina</a>
+                      <a
+                        href="property-detail.html"
+                        class="text-lg hover:text-green-600 font-medium ease-in-out duration-500"
+                        >Av. Güemes 1234, San Fernando del Valle de Catamarca,
+                        Catamarca, Argentina</a
+                      >
                     </div>
-                
-                    <ul class="py-6 border-y border-slate-100 dark:border-gray-800 flex items-center list-none gap-4">
+
+                    <ul
+                      class="py-6 border-y border-slate-100 dark:border-gray-800 flex items-center list-none gap-4"
+                    >
                       <li class="flex items-center me-4">
                         <i class="text-2xl me-2 text-green-600">
-                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="h-6 w-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                              d="M9 9V4.5M9 9H4.5M9 9 3.75 3.75M9 15v4.5M9 15H4.5M9 15l-5.25 5.25M15 9h4.5M15 9V4.5M15 9l5.25-5.25M15 15h4.5M15 15v4.5m0-4.5 5.25 5.25" />
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="h-6 w-6"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M9 9V4.5M9 9H4.5M9 9 3.75 3.75M9 15v4.5M9 15H4.5M9 15l-5.25 5.25M15 9h4.5M15 9V4.5M15 9l5.25-5.25M15 15h4.5M15 15v4.5m0-4.5 5.25 5.25"
+                            />
                           </svg>
                         </i>
                         <span>250 mts<sup>2</sup></span>
                       </li>
-                
+
                       <li class="flex items-center me-4">
                         <i class="text-2xl me-2 text-green-600">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="h-6 w-6"
+                          >
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <path d="M7 9m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
                             <path d="M22 17v-3h-20" />
@@ -689,14 +1016,25 @@
                         </i>
                         <span>3 Hab</span>
                       </li>
-                
+
                       <li class="flex items-center">
                         <i class="text-2xl me-2 text-green-600">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="icon icon-tabler icons-tabler-outline icon-tabler-bath">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-bath"
+                          >
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <path d="M4 12h16a1 1 0 0 1 1 1v3a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4v-3a1 1 0 0 1 1 -1z" />
+                            <path
+                              d="M4 12h16a1 1 0 0 1 1 1v3a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4v-3a1 1 0 0 1 1 -1z"
+                            />
                             <path d="M6 12v-7a2 2 0 0 1 2 -2h3v2.25" />
                             <path d="M4 21l1 -1.5" />
                             <path d="M20 21l-1 -1.5" />
@@ -705,62 +1043,103 @@
                         <span>2 Baños</span>
                       </li>
                     </ul>
-                
-                    <ul class="pt-6 flex justify-between items-center list-none">
+
+                    <ul
+                      class="pt-6 flex justify-between items-center list-none"
+                    >
                       <li>
                         <span class="text-slate-400">Precio</span>
                         <p class="text-lg font-medium">$150000</p>
                       </li>
-                
+
                       <li>
                         <span class="text-slate-400">Rating</span>
-                        <ul class="text-lg font-medium text-amber-400 list-none flex justify-between gap-1">
+                        <ul
+                          class="text-lg font-medium text-amber-400 list-none flex justify-between gap-1"
+                        >
                           <li class="inline">
                             <i>
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                <path fill-rule="evenodd"
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                class="size-6"
+                              >
+                                <path
+                                  fill-rule="evenodd"
                                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                                  clip-rule="evenodd" />
+                                  clip-rule="evenodd"
+                                />
                               </svg>
                             </i>
                           </li>
                           <li class="inline">
                             <i>
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                <path fill-rule="evenodd"
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                class="size-6"
+                              >
+                                <path
+                                  fill-rule="evenodd"
                                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                                  clip-rule="evenodd" />
+                                  clip-rule="evenodd"
+                                />
                               </svg>
                             </i>
                           </li>
                           <li class="inline">
                             <i>
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                <path fill-rule="evenodd"
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                class="size-6"
+                              >
+                                <path
+                                  fill-rule="evenodd"
                                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                                  clip-rule="evenodd" />
+                                  clip-rule="evenodd"
+                                />
                               </svg>
                             </i>
                           </li>
                           <li class="inline">
                             <i>
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                <path fill-rule="evenodd"
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                class="size-6"
+                              >
+                                <path
+                                  fill-rule="evenodd"
                                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                                  clip-rule="evenodd" />
+                                  clip-rule="evenodd"
+                                />
                               </svg>
                             </i>
                           </li>
                           <li class="inline">
                             <i>
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                <path fill-rule="evenodd"
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                class="size-6"
+                              >
+                                <path
+                                  fill-rule="evenodd"
                                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                                  clip-rule="evenodd" />
+                                  clip-rule="evenodd"
+                                />
                               </svg>
                             </i>
                           </li>
-                          <li class="inline text-black dark:text-white">5.0(30)</li>
+                          <li class="inline text-black dark:text-white">
+                            5.0(30)
+                          </li>
                         </ul>
                       </li>
                     </ul>
@@ -770,45 +1149,78 @@
                   class="group rounded-xl bg-white dark:bg-slate-900 shadow hover:shadow-xl dark:hover:shadow-xl dark:shadow-gray-700 dark:hover:shadow-gray-700 overflow-hidden ease-in-out duration-500 dark:text-white"
                 >
                   <div class="relative">
-                    <img src="https://imgar.zonapropcdn.com/avisos/resize/1/00/53/36/27/13/1200x1200/1904615365.jpg?isFirstImage=true"
-                      alt="Imagen Propiedad" />
-                
+                    <img
+                      src="https://imgar.zonapropcdn.com/avisos/resize/1/00/53/36/27/13/1200x1200/1904615365.jpg?isFirstImage=true"
+                      alt="Imagen Propiedad"
+                    />
+
                     <div class="absolute top-4 end-4">
-                      <a href="javascript:void(0)"
-                        class="w-10 h-10 inline-flex items-center justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-full text-slate-100 dark:text-slate-700 focus:text-red-600 dark:focus:text-red-600 hover:text-red-600 dark:hover:text-red-600"><i
-                          class="text-[20px]">
-                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                      <a
+                        href="javascript:void(0)"
+                        class="w-10 h-10 inline-flex items-center justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-full text-slate-100 dark:text-slate-700 focus:text-red-600 dark:focus:text-red-600 hover:text-red-600 dark:hover:text-red-600"
+                        ><i class="text-[20px]">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                            class="size-6"
+                          >
                             <path
-                              d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
+                              d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z"
+                            />
                           </svg>
                         </i>
                       </a>
                     </div>
                   </div>
-                
+
                   <div class="p-6">
                     <div class="pb-6">
-                      <a href="property-detail.html" class="text-lg hover:text-green-600 font-medium ease-in-out duration-500">Av.
-                        Güemes 1234, San Fernando del Valle de Catamarca,
-                        Catamarca, Argentina</a>
+                      <a
+                        href="property-detail.html"
+                        class="text-lg hover:text-green-600 font-medium ease-in-out duration-500"
+                        >Av. Güemes 1234, San Fernando del Valle de Catamarca,
+                        Catamarca, Argentina</a
+                      >
                     </div>
-                
-                    <ul class="py-6 border-y border-slate-100 dark:border-gray-800 flex items-center list-none gap-4">
+
+                    <ul
+                      class="py-6 border-y border-slate-100 dark:border-gray-800 flex items-center list-none gap-4"
+                    >
                       <li class="flex items-center me-4">
                         <i class="text-2xl me-2 text-green-600">
-                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="h-6 w-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                              d="M9 9V4.5M9 9H4.5M9 9 3.75 3.75M9 15v4.5M9 15H4.5M9 15l-5.25 5.25M15 9h4.5M15 9V4.5M15 9l5.25-5.25M15 15h4.5M15 15v4.5m0-4.5 5.25 5.25" />
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="h-6 w-6"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M9 9V4.5M9 9H4.5M9 9 3.75 3.75M9 15v4.5M9 15H4.5M9 15l-5.25 5.25M15 9h4.5M15 9V4.5M15 9l5.25-5.25M15 15h4.5M15 15v4.5m0-4.5 5.25 5.25"
+                            />
                           </svg>
                         </i>
                         <span>250 mts<sup>2</sup></span>
                       </li>
-                
+
                       <li class="flex items-center me-4">
                         <i class="text-2xl me-2 text-green-600">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="h-6 w-6"
+                          >
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <path d="M7 9m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
                             <path d="M22 17v-3h-20" />
@@ -818,14 +1230,25 @@
                         </i>
                         <span>3 Hab</span>
                       </li>
-                
+
                       <li class="flex items-center">
                         <i class="text-2xl me-2 text-green-600">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="icon icon-tabler icons-tabler-outline icon-tabler-bath">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-bath"
+                          >
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <path d="M4 12h16a1 1 0 0 1 1 1v3a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4v-3a1 1 0 0 1 1 -1z" />
+                            <path
+                              d="M4 12h16a1 1 0 0 1 1 1v3a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4v-3a1 1 0 0 1 1 -1z"
+                            />
                             <path d="M6 12v-7a2 2 0 0 1 2 -2h3v2.25" />
                             <path d="M4 21l1 -1.5" />
                             <path d="M20 21l-1 -1.5" />
@@ -834,62 +1257,103 @@
                         <span>2 Baños</span>
                       </li>
                     </ul>
-                
-                    <ul class="pt-6 flex justify-between items-center list-none">
+
+                    <ul
+                      class="pt-6 flex justify-between items-center list-none"
+                    >
                       <li>
                         <span class="text-slate-400">Precio</span>
                         <p class="text-lg font-medium">$150000</p>
                       </li>
-                
+
                       <li>
                         <span class="text-slate-400">Rating</span>
-                        <ul class="text-lg font-medium text-amber-400 list-none flex justify-between gap-1">
+                        <ul
+                          class="text-lg font-medium text-amber-400 list-none flex justify-between gap-1"
+                        >
                           <li class="inline">
                             <i>
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                <path fill-rule="evenodd"
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                class="size-6"
+                              >
+                                <path
+                                  fill-rule="evenodd"
                                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                                  clip-rule="evenodd" />
+                                  clip-rule="evenodd"
+                                />
                               </svg>
                             </i>
                           </li>
                           <li class="inline">
                             <i>
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                <path fill-rule="evenodd"
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                class="size-6"
+                              >
+                                <path
+                                  fill-rule="evenodd"
                                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                                  clip-rule="evenodd" />
+                                  clip-rule="evenodd"
+                                />
                               </svg>
                             </i>
                           </li>
                           <li class="inline">
                             <i>
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                <path fill-rule="evenodd"
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                class="size-6"
+                              >
+                                <path
+                                  fill-rule="evenodd"
                                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                                  clip-rule="evenodd" />
+                                  clip-rule="evenodd"
+                                />
                               </svg>
                             </i>
                           </li>
                           <li class="inline">
                             <i>
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                <path fill-rule="evenodd"
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                class="size-6"
+                              >
+                                <path
+                                  fill-rule="evenodd"
                                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                                  clip-rule="evenodd" />
+                                  clip-rule="evenodd"
+                                />
                               </svg>
                             </i>
                           </li>
                           <li class="inline">
                             <i>
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                <path fill-rule="evenodd"
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                class="size-6"
+                              >
+                                <path
+                                  fill-rule="evenodd"
                                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                                  clip-rule="evenodd" />
+                                  clip-rule="evenodd"
+                                />
                               </svg>
                             </i>
                           </li>
-                          <li class="inline text-black dark:text-white">5.0(30)</li>
+                          <li class="inline text-black dark:text-white">
+                            5.0(30)
+                          </li>
                         </ul>
                       </li>
                     </ul>
@@ -899,45 +1363,78 @@
                   class="group rounded-xl bg-white dark:bg-slate-900 shadow hover:shadow-xl dark:hover:shadow-xl dark:shadow-gray-700 dark:hover:shadow-gray-700 overflow-hidden ease-in-out duration-500 dark:text-white"
                 >
                   <div class="relative">
-                    <img src="https://imgar.zonapropcdn.com/avisos/resize/1/00/53/36/27/13/1200x1200/1904615365.jpg?isFirstImage=true"
-                      alt="Imagen Propiedad" />
-                
+                    <img
+                      src="https://imgar.zonapropcdn.com/avisos/resize/1/00/53/36/27/13/1200x1200/1904615365.jpg?isFirstImage=true"
+                      alt="Imagen Propiedad"
+                    />
+
                     <div class="absolute top-4 end-4">
-                      <a href="javascript:void(0)"
-                        class="w-10 h-10 inline-flex items-center justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-full text-slate-100 dark:text-slate-700 focus:text-red-600 dark:focus:text-red-600 hover:text-red-600 dark:hover:text-red-600"><i
-                          class="text-[20px]">
-                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                      <a
+                        href="javascript:void(0)"
+                        class="w-10 h-10 inline-flex items-center justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-full text-slate-100 dark:text-slate-700 focus:text-red-600 dark:focus:text-red-600 hover:text-red-600 dark:hover:text-red-600"
+                        ><i class="text-[20px]">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                            class="size-6"
+                          >
                             <path
-                              d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
+                              d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z"
+                            />
                           </svg>
                         </i>
                       </a>
                     </div>
                   </div>
-                
+
                   <div class="p-6">
                     <div class="pb-6">
-                      <a href="property-detail.html" class="text-lg hover:text-green-600 font-medium ease-in-out duration-500">Av.
-                        Güemes 1234, San Fernando del Valle de Catamarca,
-                        Catamarca, Argentina</a>
+                      <a
+                        href="property-detail.html"
+                        class="text-lg hover:text-green-600 font-medium ease-in-out duration-500"
+                        >Av. Güemes 1234, San Fernando del Valle de Catamarca,
+                        Catamarca, Argentina</a
+                      >
                     </div>
-                
-                    <ul class="py-6 border-y border-slate-100 dark:border-gray-800 flex items-center list-none gap-4">
+
+                    <ul
+                      class="py-6 border-y border-slate-100 dark:border-gray-800 flex items-center list-none gap-4"
+                    >
                       <li class="flex items-center me-4">
                         <i class="text-2xl me-2 text-green-600">
-                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="h-6 w-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                              d="M9 9V4.5M9 9H4.5M9 9 3.75 3.75M9 15v4.5M9 15H4.5M9 15l-5.25 5.25M15 9h4.5M15 9V4.5M15 9l5.25-5.25M15 15h4.5M15 15v4.5m0-4.5 5.25 5.25" />
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="h-6 w-6"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M9 9V4.5M9 9H4.5M9 9 3.75 3.75M9 15v4.5M9 15H4.5M9 15l-5.25 5.25M15 9h4.5M15 9V4.5M15 9l5.25-5.25M15 15h4.5M15 15v4.5m0-4.5 5.25 5.25"
+                            />
                           </svg>
                         </i>
                         <span>250 mts<sup>2</sup></span>
                       </li>
-                
+
                       <li class="flex items-center me-4">
                         <i class="text-2xl me-2 text-green-600">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="h-6 w-6"
+                          >
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <path d="M7 9m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
                             <path d="M22 17v-3h-20" />
@@ -947,14 +1444,25 @@
                         </i>
                         <span>3 Hab</span>
                       </li>
-                
+
                       <li class="flex items-center">
                         <i class="text-2xl me-2 text-green-600">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="icon icon-tabler icons-tabler-outline icon-tabler-bath">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-bath"
+                          >
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <path d="M4 12h16a1 1 0 0 1 1 1v3a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4v-3a1 1 0 0 1 1 -1z" />
+                            <path
+                              d="M4 12h16a1 1 0 0 1 1 1v3a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4v-3a1 1 0 0 1 1 -1z"
+                            />
                             <path d="M6 12v-7a2 2 0 0 1 2 -2h3v2.25" />
                             <path d="M4 21l1 -1.5" />
                             <path d="M20 21l-1 -1.5" />
@@ -963,62 +1471,103 @@
                         <span>2 Baños</span>
                       </li>
                     </ul>
-                
-                    <ul class="pt-6 flex justify-between items-center list-none">
+
+                    <ul
+                      class="pt-6 flex justify-between items-center list-none"
+                    >
                       <li>
                         <span class="text-slate-400">Precio</span>
                         <p class="text-lg font-medium">$150000</p>
                       </li>
-                
+
                       <li>
                         <span class="text-slate-400">Rating</span>
-                        <ul class="text-lg font-medium text-amber-400 list-none flex justify-between gap-1">
+                        <ul
+                          class="text-lg font-medium text-amber-400 list-none flex justify-between gap-1"
+                        >
                           <li class="inline">
                             <i>
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                <path fill-rule="evenodd"
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                class="size-6"
+                              >
+                                <path
+                                  fill-rule="evenodd"
                                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                                  clip-rule="evenodd" />
+                                  clip-rule="evenodd"
+                                />
                               </svg>
                             </i>
                           </li>
                           <li class="inline">
                             <i>
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                <path fill-rule="evenodd"
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                class="size-6"
+                              >
+                                <path
+                                  fill-rule="evenodd"
                                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                                  clip-rule="evenodd" />
+                                  clip-rule="evenodd"
+                                />
                               </svg>
                             </i>
                           </li>
                           <li class="inline">
                             <i>
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                <path fill-rule="evenodd"
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                class="size-6"
+                              >
+                                <path
+                                  fill-rule="evenodd"
                                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                                  clip-rule="evenodd" />
+                                  clip-rule="evenodd"
+                                />
                               </svg>
                             </i>
                           </li>
                           <li class="inline">
                             <i>
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                <path fill-rule="evenodd"
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                class="size-6"
+                              >
+                                <path
+                                  fill-rule="evenodd"
                                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                                  clip-rule="evenodd" />
+                                  clip-rule="evenodd"
+                                />
                               </svg>
                             </i>
                           </li>
                           <li class="inline">
                             <i>
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                <path fill-rule="evenodd"
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                class="size-6"
+                              >
+                                <path
+                                  fill-rule="evenodd"
                                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                                  clip-rule="evenodd" />
+                                  clip-rule="evenodd"
+                                />
                               </svg>
                             </i>
                           </li>
-                          <li class="inline text-black dark:text-white">5.0(30)</li>
+                          <li class="inline text-black dark:text-white">
+                            5.0(30)
+                          </li>
                         </ul>
                       </li>
                     </ul>
@@ -1028,45 +1577,78 @@
                   class="group rounded-xl bg-white dark:bg-slate-900 shadow hover:shadow-xl dark:hover:shadow-xl dark:shadow-gray-700 dark:hover:shadow-gray-700 overflow-hidden ease-in-out duration-500 dark:text-white"
                 >
                   <div class="relative">
-                    <img src="https://imgar.zonapropcdn.com/avisos/resize/1/00/53/36/27/13/1200x1200/1904615365.jpg?isFirstImage=true"
-                      alt="Imagen Propiedad" />
-                
+                    <img
+                      src="https://imgar.zonapropcdn.com/avisos/resize/1/00/53/36/27/13/1200x1200/1904615365.jpg?isFirstImage=true"
+                      alt="Imagen Propiedad"
+                    />
+
                     <div class="absolute top-4 end-4">
-                      <a href="javascript:void(0)"
-                        class="w-10 h-10 inline-flex items-center justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-full text-slate-100 dark:text-slate-700 focus:text-red-600 dark:focus:text-red-600 hover:text-red-600 dark:hover:text-red-600"><i
-                          class="text-[20px]">
-                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                      <a
+                        href="javascript:void(0)"
+                        class="w-10 h-10 inline-flex items-center justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-full text-slate-100 dark:text-slate-700 focus:text-red-600 dark:focus:text-red-600 hover:text-red-600 dark:hover:text-red-600"
+                        ><i class="text-[20px]">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                            class="size-6"
+                          >
                             <path
-                              d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
+                              d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z"
+                            />
                           </svg>
                         </i>
                       </a>
                     </div>
                   </div>
-                
+
                   <div class="p-6">
                     <div class="pb-6">
-                      <a href="property-detail.html" class="text-lg hover:text-green-600 font-medium ease-in-out duration-500">Av.
-                        Güemes 1234, San Fernando del Valle de Catamarca,
-                        Catamarca, Argentina</a>
+                      <a
+                        href="property-detail.html"
+                        class="text-lg hover:text-green-600 font-medium ease-in-out duration-500"
+                        >Av. Güemes 1234, San Fernando del Valle de Catamarca,
+                        Catamarca, Argentina</a
+                      >
                     </div>
-                
-                    <ul class="py-6 border-y border-slate-100 dark:border-gray-800 flex items-center list-none gap-4">
+
+                    <ul
+                      class="py-6 border-y border-slate-100 dark:border-gray-800 flex items-center list-none gap-4"
+                    >
                       <li class="flex items-center me-4">
                         <i class="text-2xl me-2 text-green-600">
-                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="h-6 w-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                              d="M9 9V4.5M9 9H4.5M9 9 3.75 3.75M9 15v4.5M9 15H4.5M9 15l-5.25 5.25M15 9h4.5M15 9V4.5M15 9l5.25-5.25M15 15h4.5M15 15v4.5m0-4.5 5.25 5.25" />
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="h-6 w-6"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M9 9V4.5M9 9H4.5M9 9 3.75 3.75M9 15v4.5M9 15H4.5M9 15l-5.25 5.25M15 9h4.5M15 9V4.5M15 9l5.25-5.25M15 15h4.5M15 15v4.5m0-4.5 5.25 5.25"
+                            />
                           </svg>
                         </i>
                         <span>250 mts<sup>2</sup></span>
                       </li>
-                
+
                       <li class="flex items-center me-4">
                         <i class="text-2xl me-2 text-green-600">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="h-6 w-6"
+                          >
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <path d="M7 9m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
                             <path d="M22 17v-3h-20" />
@@ -1076,14 +1658,25 @@
                         </i>
                         <span>3 Hab</span>
                       </li>
-                
+
                       <li class="flex items-center">
                         <i class="text-2xl me-2 text-green-600">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="icon icon-tabler icons-tabler-outline icon-tabler-bath">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-bath"
+                          >
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <path d="M4 12h16a1 1 0 0 1 1 1v3a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4v-3a1 1 0 0 1 1 -1z" />
+                            <path
+                              d="M4 12h16a1 1 0 0 1 1 1v3a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4v-3a1 1 0 0 1 1 -1z"
+                            />
                             <path d="M6 12v-7a2 2 0 0 1 2 -2h3v2.25" />
                             <path d="M4 21l1 -1.5" />
                             <path d="M20 21l-1 -1.5" />
@@ -1092,62 +1685,103 @@
                         <span>2 Baños</span>
                       </li>
                     </ul>
-                
-                    <ul class="pt-6 flex justify-between items-center list-none">
+
+                    <ul
+                      class="pt-6 flex justify-between items-center list-none"
+                    >
                       <li>
                         <span class="text-slate-400">Precio</span>
                         <p class="text-lg font-medium">$150000</p>
                       </li>
-                
+
                       <li>
                         <span class="text-slate-400">Rating</span>
-                        <ul class="text-lg font-medium text-amber-400 list-none flex justify-between gap-1">
+                        <ul
+                          class="text-lg font-medium text-amber-400 list-none flex justify-between gap-1"
+                        >
                           <li class="inline">
                             <i>
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                <path fill-rule="evenodd"
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                class="size-6"
+                              >
+                                <path
+                                  fill-rule="evenodd"
                                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                                  clip-rule="evenodd" />
+                                  clip-rule="evenodd"
+                                />
                               </svg>
                             </i>
                           </li>
                           <li class="inline">
                             <i>
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                <path fill-rule="evenodd"
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                class="size-6"
+                              >
+                                <path
+                                  fill-rule="evenodd"
                                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                                  clip-rule="evenodd" />
+                                  clip-rule="evenodd"
+                                />
                               </svg>
                             </i>
                           </li>
                           <li class="inline">
                             <i>
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                <path fill-rule="evenodd"
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                class="size-6"
+                              >
+                                <path
+                                  fill-rule="evenodd"
                                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                                  clip-rule="evenodd" />
+                                  clip-rule="evenodd"
+                                />
                               </svg>
                             </i>
                           </li>
                           <li class="inline">
                             <i>
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                <path fill-rule="evenodd"
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                class="size-6"
+                              >
+                                <path
+                                  fill-rule="evenodd"
                                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                                  clip-rule="evenodd" />
+                                  clip-rule="evenodd"
+                                />
                               </svg>
                             </i>
                           </li>
                           <li class="inline">
                             <i>
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                <path fill-rule="evenodd"
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                class="size-6"
+                              >
+                                <path
+                                  fill-rule="evenodd"
                                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                                  clip-rule="evenodd" />
+                                  clip-rule="evenodd"
+                                />
                               </svg>
                             </i>
                           </li>
-                          <li class="inline text-black dark:text-white">5.0(30)</li>
+                          <li class="inline text-black dark:text-white">
+                            5.0(30)
+                          </li>
                         </ul>
                       </li>
                     </ul>
@@ -1157,45 +1791,78 @@
                   class="group rounded-xl bg-white dark:bg-slate-900 shadow hover:shadow-xl dark:hover:shadow-xl dark:shadow-gray-700 dark:hover:shadow-gray-700 overflow-hidden ease-in-out duration-500 dark:text-white"
                 >
                   <div class="relative">
-                    <img src="https://imgar.zonapropcdn.com/avisos/resize/1/00/53/36/27/13/1200x1200/1904615365.jpg?isFirstImage=true"
-                      alt="Imagen Propiedad" />
-                
+                    <img
+                      src="https://imgar.zonapropcdn.com/avisos/resize/1/00/53/36/27/13/1200x1200/1904615365.jpg?isFirstImage=true"
+                      alt="Imagen Propiedad"
+                    />
+
                     <div class="absolute top-4 end-4">
-                      <a href="javascript:void(0)"
-                        class="w-10 h-10 inline-flex items-center justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-full text-slate-100 dark:text-slate-700 focus:text-red-600 dark:focus:text-red-600 hover:text-red-600 dark:hover:text-red-600"><i
-                          class="text-[20px]">
-                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                      <a
+                        href="javascript:void(0)"
+                        class="w-10 h-10 inline-flex items-center justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-full text-slate-100 dark:text-slate-700 focus:text-red-600 dark:focus:text-red-600 hover:text-red-600 dark:hover:text-red-600"
+                        ><i class="text-[20px]">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                            class="size-6"
+                          >
                             <path
-                              d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
+                              d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z"
+                            />
                           </svg>
                         </i>
                       </a>
                     </div>
                   </div>
-                
+
                   <div class="p-6">
                     <div class="pb-6">
-                      <a href="property-detail.html" class="text-lg hover:text-green-600 font-medium ease-in-out duration-500">Av.
-                        Güemes 1234, San Fernando del Valle de Catamarca,
-                        Catamarca, Argentina</a>
+                      <a
+                        href="property-detail.html"
+                        class="text-lg hover:text-green-600 font-medium ease-in-out duration-500"
+                        >Av. Güemes 1234, San Fernando del Valle de Catamarca,
+                        Catamarca, Argentina</a
+                      >
                     </div>
-                
-                    <ul class="py-6 border-y border-slate-100 dark:border-gray-800 flex items-center list-none gap-4">
+
+                    <ul
+                      class="py-6 border-y border-slate-100 dark:border-gray-800 flex items-center list-none gap-4"
+                    >
                       <li class="flex items-center me-4">
                         <i class="text-2xl me-2 text-green-600">
-                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="h-6 w-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                              d="M9 9V4.5M9 9H4.5M9 9 3.75 3.75M9 15v4.5M9 15H4.5M9 15l-5.25 5.25M15 9h4.5M15 9V4.5M15 9l5.25-5.25M15 15h4.5M15 15v4.5m0-4.5 5.25 5.25" />
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="h-6 w-6"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M9 9V4.5M9 9H4.5M9 9 3.75 3.75M9 15v4.5M9 15H4.5M9 15l-5.25 5.25M15 9h4.5M15 9V4.5M15 9l5.25-5.25M15 15h4.5M15 15v4.5m0-4.5 5.25 5.25"
+                            />
                           </svg>
                         </i>
                         <span>250 mts<sup>2</sup></span>
                       </li>
-                
+
                       <li class="flex items-center me-4">
                         <i class="text-2xl me-2 text-green-600">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="h-6 w-6"
+                          >
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <path d="M7 9m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
                             <path d="M22 17v-3h-20" />
@@ -1205,14 +1872,25 @@
                         </i>
                         <span>3 Hab</span>
                       </li>
-                
+
                       <li class="flex items-center">
                         <i class="text-2xl me-2 text-green-600">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="icon icon-tabler icons-tabler-outline icon-tabler-bath">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-bath"
+                          >
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <path d="M4 12h16a1 1 0 0 1 1 1v3a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4v-3a1 1 0 0 1 1 -1z" />
+                            <path
+                              d="M4 12h16a1 1 0 0 1 1 1v3a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4v-3a1 1 0 0 1 1 -1z"
+                            />
                             <path d="M6 12v-7a2 2 0 0 1 2 -2h3v2.25" />
                             <path d="M4 21l1 -1.5" />
                             <path d="M20 21l-1 -1.5" />
@@ -1221,62 +1899,103 @@
                         <span>2 Baños</span>
                       </li>
                     </ul>
-                
-                    <ul class="pt-6 flex justify-between items-center list-none">
+
+                    <ul
+                      class="pt-6 flex justify-between items-center list-none"
+                    >
                       <li>
                         <span class="text-slate-400">Precio</span>
                         <p class="text-lg font-medium">$150000</p>
                       </li>
-                
+
                       <li>
                         <span class="text-slate-400">Rating</span>
-                        <ul class="text-lg font-medium text-amber-400 list-none flex justify-between gap-1">
+                        <ul
+                          class="text-lg font-medium text-amber-400 list-none flex justify-between gap-1"
+                        >
                           <li class="inline">
                             <i>
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                <path fill-rule="evenodd"
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                class="size-6"
+                              >
+                                <path
+                                  fill-rule="evenodd"
                                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                                  clip-rule="evenodd" />
+                                  clip-rule="evenodd"
+                                />
                               </svg>
                             </i>
                           </li>
                           <li class="inline">
                             <i>
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                <path fill-rule="evenodd"
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                class="size-6"
+                              >
+                                <path
+                                  fill-rule="evenodd"
                                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                                  clip-rule="evenodd" />
+                                  clip-rule="evenodd"
+                                />
                               </svg>
                             </i>
                           </li>
                           <li class="inline">
                             <i>
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                <path fill-rule="evenodd"
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                class="size-6"
+                              >
+                                <path
+                                  fill-rule="evenodd"
                                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                                  clip-rule="evenodd" />
+                                  clip-rule="evenodd"
+                                />
                               </svg>
                             </i>
                           </li>
                           <li class="inline">
                             <i>
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                <path fill-rule="evenodd"
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                class="size-6"
+                              >
+                                <path
+                                  fill-rule="evenodd"
                                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                                  clip-rule="evenodd" />
+                                  clip-rule="evenodd"
+                                />
                               </svg>
                             </i>
                           </li>
                           <li class="inline">
                             <i>
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                <path fill-rule="evenodd"
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                class="size-6"
+                              >
+                                <path
+                                  fill-rule="evenodd"
                                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                                  clip-rule="evenodd" />
+                                  clip-rule="evenodd"
+                                />
                               </svg>
                             </i>
                           </li>
-                          <li class="inline text-black dark:text-white">5.0(30)</li>
+                          <li class="inline text-black dark:text-white">
+                            5.0(30)
+                          </li>
                         </ul>
                       </li>
                     </ul>
@@ -1286,45 +2005,78 @@
                   class="group rounded-xl bg-white dark:bg-slate-900 shadow hover:shadow-xl dark:hover:shadow-xl dark:shadow-gray-700 dark:hover:shadow-gray-700 overflow-hidden ease-in-out duration-500 dark:text-white"
                 >
                   <div class="relative">
-                    <img src="https://imgar.zonapropcdn.com/avisos/resize/1/00/53/36/27/13/1200x1200/1904615365.jpg?isFirstImage=true"
-                      alt="Imagen Propiedad" />
-                
+                    <img
+                      src="https://imgar.zonapropcdn.com/avisos/resize/1/00/53/36/27/13/1200x1200/1904615365.jpg?isFirstImage=true"
+                      alt="Imagen Propiedad"
+                    />
+
                     <div class="absolute top-4 end-4">
-                      <a href="javascript:void(0)"
-                        class="w-10 h-10 inline-flex items-center justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-full text-slate-100 dark:text-slate-700 focus:text-red-600 dark:focus:text-red-600 hover:text-red-600 dark:hover:text-red-600"><i
-                          class="text-[20px]">
-                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                      <a
+                        href="javascript:void(0)"
+                        class="w-10 h-10 inline-flex items-center justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-full text-slate-100 dark:text-slate-700 focus:text-red-600 dark:focus:text-red-600 hover:text-red-600 dark:hover:text-red-600"
+                        ><i class="text-[20px]">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                            class="size-6"
+                          >
                             <path
-                              d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
+                              d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z"
+                            />
                           </svg>
                         </i>
                       </a>
                     </div>
                   </div>
-                
+
                   <div class="p-6">
                     <div class="pb-6">
-                      <a href="property-detail.html" class="text-lg hover:text-green-600 font-medium ease-in-out duration-500">Av.
-                        Güemes 1234, San Fernando del Valle de Catamarca,
-                        Catamarca, Argentina</a>
+                      <a
+                        href="property-detail.html"
+                        class="text-lg hover:text-green-600 font-medium ease-in-out duration-500"
+                        >Av. Güemes 1234, San Fernando del Valle de Catamarca,
+                        Catamarca, Argentina</a
+                      >
                     </div>
-                
-                    <ul class="py-6 border-y border-slate-100 dark:border-gray-800 flex items-center list-none gap-4">
+
+                    <ul
+                      class="py-6 border-y border-slate-100 dark:border-gray-800 flex items-center list-none gap-4"
+                    >
                       <li class="flex items-center me-4">
                         <i class="text-2xl me-2 text-green-600">
-                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="h-6 w-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                              d="M9 9V4.5M9 9H4.5M9 9 3.75 3.75M9 15v4.5M9 15H4.5M9 15l-5.25 5.25M15 9h4.5M15 9V4.5M15 9l5.25-5.25M15 15h4.5M15 15v4.5m0-4.5 5.25 5.25" />
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="h-6 w-6"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M9 9V4.5M9 9H4.5M9 9 3.75 3.75M9 15v4.5M9 15H4.5M9 15l-5.25 5.25M15 9h4.5M15 9V4.5M15 9l5.25-5.25M15 15h4.5M15 15v4.5m0-4.5 5.25 5.25"
+                            />
                           </svg>
                         </i>
                         <span>250 mts<sup>2</sup></span>
                       </li>
-                
+
                       <li class="flex items-center me-4">
                         <i class="text-2xl me-2 text-green-600">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="h-6 w-6"
+                          >
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <path d="M7 9m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
                             <path d="M22 17v-3h-20" />
@@ -1334,14 +2086,25 @@
                         </i>
                         <span>3 Hab</span>
                       </li>
-                
+
                       <li class="flex items-center">
                         <i class="text-2xl me-2 text-green-600">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="icon icon-tabler icons-tabler-outline icon-tabler-bath">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-bath"
+                          >
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <path d="M4 12h16a1 1 0 0 1 1 1v3a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4v-3a1 1 0 0 1 1 -1z" />
+                            <path
+                              d="M4 12h16a1 1 0 0 1 1 1v3a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4v-3a1 1 0 0 1 1 -1z"
+                            />
                             <path d="M6 12v-7a2 2 0 0 1 2 -2h3v2.25" />
                             <path d="M4 21l1 -1.5" />
                             <path d="M20 21l-1 -1.5" />
@@ -1350,62 +2113,103 @@
                         <span>2 Baños</span>
                       </li>
                     </ul>
-                
-                    <ul class="pt-6 flex justify-between items-center list-none">
+
+                    <ul
+                      class="pt-6 flex justify-between items-center list-none"
+                    >
                       <li>
                         <span class="text-slate-400">Precio</span>
                         <p class="text-lg font-medium">$150000</p>
                       </li>
-                
+
                       <li>
                         <span class="text-slate-400">Rating</span>
-                        <ul class="text-lg font-medium text-amber-400 list-none flex justify-between gap-1">
+                        <ul
+                          class="text-lg font-medium text-amber-400 list-none flex justify-between gap-1"
+                        >
                           <li class="inline">
                             <i>
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                <path fill-rule="evenodd"
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                class="size-6"
+                              >
+                                <path
+                                  fill-rule="evenodd"
                                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                                  clip-rule="evenodd" />
+                                  clip-rule="evenodd"
+                                />
                               </svg>
                             </i>
                           </li>
                           <li class="inline">
                             <i>
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                <path fill-rule="evenodd"
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                class="size-6"
+                              >
+                                <path
+                                  fill-rule="evenodd"
                                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                                  clip-rule="evenodd" />
+                                  clip-rule="evenodd"
+                                />
                               </svg>
                             </i>
                           </li>
                           <li class="inline">
                             <i>
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                <path fill-rule="evenodd"
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                class="size-6"
+                              >
+                                <path
+                                  fill-rule="evenodd"
                                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                                  clip-rule="evenodd" />
+                                  clip-rule="evenodd"
+                                />
                               </svg>
                             </i>
                           </li>
                           <li class="inline">
                             <i>
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                <path fill-rule="evenodd"
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                class="size-6"
+                              >
+                                <path
+                                  fill-rule="evenodd"
                                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                                  clip-rule="evenodd" />
+                                  clip-rule="evenodd"
+                                />
                               </svg>
                             </i>
                           </li>
                           <li class="inline">
                             <i>
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                <path fill-rule="evenodd"
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                class="size-6"
+                              >
+                                <path
+                                  fill-rule="evenodd"
                                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                                  clip-rule="evenodd" />
+                                  clip-rule="evenodd"
+                                />
                               </svg>
                             </i>
                           </li>
-                          <li class="inline text-black dark:text-white">5.0(30)</li>
+                          <li class="inline text-black dark:text-white">
+                            5.0(30)
+                          </li>
                         </ul>
                       </li>
                     </ul>
@@ -1415,45 +2219,78 @@
                   class="group rounded-xl bg-white dark:bg-slate-900 shadow hover:shadow-xl dark:hover:shadow-xl dark:shadow-gray-700 dark:hover:shadow-gray-700 overflow-hidden ease-in-out duration-500 dark:text-white"
                 >
                   <div class="relative">
-                    <img src="https://imgar.zonapropcdn.com/avisos/resize/1/00/53/36/27/13/1200x1200/1904615365.jpg?isFirstImage=true"
-                      alt="Imagen Propiedad" />
-                
+                    <img
+                      src="https://imgar.zonapropcdn.com/avisos/resize/1/00/53/36/27/13/1200x1200/1904615365.jpg?isFirstImage=true"
+                      alt="Imagen Propiedad"
+                    />
+
                     <div class="absolute top-4 end-4">
-                      <a href="javascript:void(0)"
-                        class="w-10 h-10 inline-flex items-center justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-full text-slate-100 dark:text-slate-700 focus:text-red-600 dark:focus:text-red-600 hover:text-red-600 dark:hover:text-red-600"><i
-                          class="text-[20px]">
-                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                      <a
+                        href="javascript:void(0)"
+                        class="w-10 h-10 inline-flex items-center justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-full text-slate-100 dark:text-slate-700 focus:text-red-600 dark:focus:text-red-600 hover:text-red-600 dark:hover:text-red-600"
+                        ><i class="text-[20px]">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                            class="size-6"
+                          >
                             <path
-                              d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
+                              d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z"
+                            />
                           </svg>
                         </i>
                       </a>
                     </div>
                   </div>
-                
+
                   <div class="p-6">
                     <div class="pb-6">
-                      <a href="property-detail.html" class="text-lg hover:text-green-600 font-medium ease-in-out duration-500">Av.
-                        Güemes 1234, San Fernando del Valle de Catamarca,
-                        Catamarca, Argentina</a>
+                      <a
+                        href="property-detail.html"
+                        class="text-lg hover:text-green-600 font-medium ease-in-out duration-500"
+                        >Av. Güemes 1234, San Fernando del Valle de Catamarca,
+                        Catamarca, Argentina</a
+                      >
                     </div>
-                
-                    <ul class="py-6 border-y border-slate-100 dark:border-gray-800 flex items-center list-none gap-4">
+
+                    <ul
+                      class="py-6 border-y border-slate-100 dark:border-gray-800 flex items-center list-none gap-4"
+                    >
                       <li class="flex items-center me-4">
                         <i class="text-2xl me-2 text-green-600">
-                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="h-6 w-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                              d="M9 9V4.5M9 9H4.5M9 9 3.75 3.75M9 15v4.5M9 15H4.5M9 15l-5.25 5.25M15 9h4.5M15 9V4.5M15 9l5.25-5.25M15 15h4.5M15 15v4.5m0-4.5 5.25 5.25" />
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="h-6 w-6"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M9 9V4.5M9 9H4.5M9 9 3.75 3.75M9 15v4.5M9 15H4.5M9 15l-5.25 5.25M15 9h4.5M15 9V4.5M15 9l5.25-5.25M15 15h4.5M15 15v4.5m0-4.5 5.25 5.25"
+                            />
                           </svg>
                         </i>
                         <span>250 mts<sup>2</sup></span>
                       </li>
-                
+
                       <li class="flex items-center me-4">
                         <i class="text-2xl me-2 text-green-600">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="h-6 w-6"
+                          >
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <path d="M7 9m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
                             <path d="M22 17v-3h-20" />
@@ -1463,14 +2300,25 @@
                         </i>
                         <span>3 Hab</span>
                       </li>
-                
+
                       <li class="flex items-center">
                         <i class="text-2xl me-2 text-green-600">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="icon icon-tabler icons-tabler-outline icon-tabler-bath">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-bath"
+                          >
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <path d="M4 12h16a1 1 0 0 1 1 1v3a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4v-3a1 1 0 0 1 1 -1z" />
+                            <path
+                              d="M4 12h16a1 1 0 0 1 1 1v3a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4v-3a1 1 0 0 1 1 -1z"
+                            />
                             <path d="M6 12v-7a2 2 0 0 1 2 -2h3v2.25" />
                             <path d="M4 21l1 -1.5" />
                             <path d="M20 21l-1 -1.5" />
@@ -1479,108 +2327,169 @@
                         <span>2 Baños</span>
                       </li>
                     </ul>
-                
-                    <ul class="pt-6 flex justify-between items-center list-none">
+
+                    <ul
+                      class="pt-6 flex justify-between items-center list-none"
+                    >
                       <li>
                         <span class="text-slate-400">Precio</span>
                         <p class="text-lg font-medium">$150000</p>
                       </li>
-                
+
                       <li>
                         <span class="text-slate-400">Rating</span>
-                        <ul class="text-lg font-medium text-amber-400 list-none flex justify-between gap-1">
+                        <ul
+                          class="text-lg font-medium text-amber-400 list-none flex justify-between gap-1"
+                        >
                           <li class="inline">
                             <i>
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                <path fill-rule="evenodd"
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                class="size-6"
+                              >
+                                <path
+                                  fill-rule="evenodd"
                                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                                  clip-rule="evenodd" />
+                                  clip-rule="evenodd"
+                                />
                               </svg>
                             </i>
                           </li>
                           <li class="inline">
                             <i>
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                <path fill-rule="evenodd"
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                class="size-6"
+                              >
+                                <path
+                                  fill-rule="evenodd"
                                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                                  clip-rule="evenodd" />
+                                  clip-rule="evenodd"
+                                />
                               </svg>
                             </i>
                           </li>
                           <li class="inline">
                             <i>
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                <path fill-rule="evenodd"
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                class="size-6"
+                              >
+                                <path
+                                  fill-rule="evenodd"
                                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                                  clip-rule="evenodd" />
+                                  clip-rule="evenodd"
+                                />
                               </svg>
                             </i>
                           </li>
                           <li class="inline">
                             <i>
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                <path fill-rule="evenodd"
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                class="size-6"
+                              >
+                                <path
+                                  fill-rule="evenodd"
                                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                                  clip-rule="evenodd" />
+                                  clip-rule="evenodd"
+                                />
                               </svg>
                             </i>
                           </li>
                           <li class="inline">
                             <i>
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                <path fill-rule="evenodd"
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                class="size-6"
+                              >
+                                <path
+                                  fill-rule="evenodd"
                                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                                  clip-rule="evenodd" />
+                                  clip-rule="evenodd"
+                                />
                               </svg>
                             </i>
                           </li>
-                          <li class="inline text-black dark:text-white">5.0(30)</li>
+                          <li class="inline text-black dark:text-white">
+                            5.0(30)
+                          </li>
                         </ul>
                       </li>
                     </ul>
                   </div>
                 </div>
-              </div><!--en grid-->
-      
+              </div>
+              <!--en grid-->
+
               <div class="grid md:grid-cols-12 grid-cols-1 mt-8">
                 <div class="md:col-span-12 text-center">
                   <nav>
                     <ul class="inline-flex items-center -space-x-px">
                       <li>
-                        <a href="#"
-                          class="size-10 inline-flex justify-center items-center mx-1 rounded-full text-slate-400 bg-white dark:bg-slate-900 hover:text-white shadow-sm dark:shadow-gray-700 hover:border-green-600 dark:hover:border-green-600 hover:bg-green-600 dark:hover:bg-green-600">
+                        <a
+                          href="#"
+                          class="size-10 inline-flex justify-center items-center mx-1 rounded-full text-slate-400 bg-white dark:bg-slate-900 hover:text-white shadow-sm dark:shadow-gray-700 hover:border-green-600 dark:hover:border-green-600 hover:bg-green-600 dark:hover:bg-green-600"
+                        >
                           <i class="uil uil-angle-left text-[20px]"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="#"
-                          class="size-10 inline-flex justify-center items-center mx-1 rounded-full text-slate-400 hover:text-white bg-white dark:bg-slate-900 shadow-sm dark:shadow-gray-700 hover:border-green-600 dark:hover:border-green-600 hover:bg-green-600 dark:hover:bg-green-600">1</a>
+                        <a
+                          href="#"
+                          class="size-10 inline-flex justify-center items-center mx-1 rounded-full text-slate-400 hover:text-white bg-white dark:bg-slate-900 shadow-sm dark:shadow-gray-700 hover:border-green-600 dark:hover:border-green-600 hover:bg-green-600 dark:hover:bg-green-600"
+                          >1</a
+                        >
                       </li>
                       <li>
-                        <a href="#"
-                          class="size-10 inline-flex justify-center items-center mx-1 rounded-full text-slate-400 hover:text-white bg-white dark:bg-slate-900 shadow-sm dark:shadow-gray-700 hover:border-green-600 dark:hover:border-green-600 hover:bg-green-600 dark:hover:bg-green-600">2</a>
+                        <a
+                          href="#"
+                          class="size-10 inline-flex justify-center items-center mx-1 rounded-full text-slate-400 hover:text-white bg-white dark:bg-slate-900 shadow-sm dark:shadow-gray-700 hover:border-green-600 dark:hover:border-green-600 hover:bg-green-600 dark:hover:bg-green-600"
+                          >2</a
+                        >
                       </li>
                       <li>
-                        <a href="#" aria-current="page"
-                          class="z-10 size-10 inline-flex justify-center items-center mx-1 rounded-full text-white bg-green-600 shadow-sm dark:shadow-gray-700">3</a>
+                        <a
+                          href="#"
+                          aria-current="page"
+                          class="z-10 size-10 inline-flex justify-center items-center mx-1 rounded-full text-white bg-green-600 shadow-sm dark:shadow-gray-700"
+                          >3</a
+                        >
                       </li>
                       <li>
-                        <a href="#"
-                          class="size-10 inline-flex justify-center items-center mx-1 rounded-full text-slate-400 hover:text-white bg-white dark:bg-slate-900 shadow-sm dark:shadow-gray-700 hover:border-green-600 dark:hover:border-green-600 hover:bg-green-600 dark:hover:bg-green-600">4</a>
+                        <a
+                          href="#"
+                          class="size-10 inline-flex justify-center items-center mx-1 rounded-full text-slate-400 hover:text-white bg-white dark:bg-slate-900 shadow-sm dark:shadow-gray-700 hover:border-green-600 dark:hover:border-green-600 hover:bg-green-600 dark:hover:bg-green-600"
+                          >4</a
+                        >
                       </li>
                       <li>
-                        <a href="#"
-                          class="size-10 inline-flex justify-center items-center mx-1 rounded-full text-slate-400 bg-white dark:bg-slate-900 hover:text-white shadow-sm dark:shadow-gray-700 hover:border-green-600 dark:hover:border-green-600 hover:bg-green-600 dark:hover:bg-green-600">
+                        <a
+                          href="#"
+                          class="size-10 inline-flex justify-center items-center mx-1 rounded-full text-slate-400 bg-white dark:bg-slate-900 hover:text-white shadow-sm dark:shadow-gray-700 hover:border-green-600 dark:hover:border-green-600 hover:bg-green-600 dark:hover:bg-green-600"
+                        >
                           <i class="uil uil-angle-right text-[20px]"></i>
                         </a>
                       </li>
                     </ul>
                   </nav>
                 </div>
-              </div><!--end grid-->
+              </div>
+              <!--end grid-->
             </div>
           </div>
-        </div><!--end container-->
+        </div>
+        <!--end container-->
       </section>
     </main>
 
@@ -1618,18 +2527,17 @@
                           class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
                         >
                           <svg
-                            class="w-4 h-4 text-gray-500 dark:text-gray-400"
-                            aria-hidden="true"
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
-                            viewBox="0 0 20 20"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            fill="none"
+                            class="w-5 h-5 text-gray-500 dark:text-gray-400"
                           >
                             <path
-                              stroke="currentColor"
                               stroke-linecap="round"
                               stroke-linejoin="round"
-                              stroke-width="2"
-                              d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                              d="M16.5 12a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 1 0-2.636 6.364M16.5 12V8.25"
                             />
                           </svg>
                         </div>
@@ -1652,7 +2560,7 @@
 
                 <div class="absolute -top-5 -start-5">
                   <div
-                    class="lg:text-[150px] text-7xl text-black/5 dark:text-white/5 ltr:-rotate-45 rtl:rotate-45"
+                    class="lg:text-[150px] text-7xl text-black/5 dark:text-white/5 ltr:-rotate-45"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -1673,7 +2581,7 @@
 
                 <div class="absolute -bottom-5 -end-5">
                   <div
-                    class="uil uil-pen lg:text-[150px] text-7xl text-black/5 dark:text-white/5 rtl:-rotate-90"
+                    class="uil uil-pen lg:text-[150px] text-7xl text-black/5 dark:text-white/5"
                   ></div>
                 </div>
               </div>
@@ -1879,10 +2787,8 @@
         </div>
       </div>
 
-      <div
-        class="py-[30px] px-0 border-t border-gray-800 dark:border-gray-700"
-      >
-        <div class="container relative text-center mx-auto max-w-screen-xl ">
+      <div class="py-[30px] px-0 border-t border-gray-800 dark:border-gray-700">
+        <div class="container relative text-center mx-auto max-w-screen-xl">
           <div class="grid md:grid-cols-2 items-center gap-6">
             <div class="md:text-start text-center">
               <p class="mb-0 text-gray-300 flex gap-2">
@@ -1894,20 +2800,7 @@
                 <script>
                   document.write(new Date().getFullYear());
                 </script>
-                Inmobiliaria. Hecho con
-                <i class="text-red-600">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    class="size-6"
-                  >
-                    <path
-                      d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z"
-                    />
-                  </svg>
-                </i>
-                por
+                Inmobiliaria. Hecho por
                 <a href="#" target="_blank" class="text-reset"
                   >Luciano Reguera.
                 </a>
