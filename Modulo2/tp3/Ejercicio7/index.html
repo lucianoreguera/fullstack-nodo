@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7 - Reguera Luciano</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold mb-8 text-center">Simulador de Plazos Fijos</h1>
+        <div class="bg-white shadow-md rounded px-8 py-6">
+            <div class="mb-4">
+                <label for="capital" class="block text-gray-700 text-sm font-bold mb-2">Capital a Invertir</label>
+                <input type="number" id="capital" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="1000000">
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2">Tasa Preferencial</label>
+                <div class="flex items-center">
+                    <input type="checkbox" id="clienteBanco" class="mr-2">
+                    <label for="clienteBanco" class="text-sm">Para Clientes del Banco (0.7% más sobre rentabilidad)</label>
+                </div>
+                <div class="flex items-center mt-2">
+                    <input type="checkbox" id="plazoAutorenovable" class="mr-2">
+                    <label for="plazoAutorenovable" class="text-sm">Plazo Fijo autorenovable cada 3 meses (0.9% más sobre rentabilidad)</label>
+                </div>
+            </div>
+            <button id="btnCalcular" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+                Calcular Rentabilidad
+            </button>
+            <div id="resultados" class="mt-4"></div>
+        </div>
+    </div>
+    <script src="controlador.js"></script>
+</body>
+</html>
