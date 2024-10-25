@@ -1,0 +1,80 @@
+{
+	"info": {
+		"_postman_id": "5403d981-5394-4172-a564-27aab8e58d83",
+		"name": "DiplomaturaFullStackNodo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10380663",
+		"_collection_link": "https://restless-moon-924499.postman.co/workspace/Muni~310aa4b5-5adb-4a7e-a448-6552c6cfd2bf/collection/10380663-5403d981-5394-4172-a564-27aab8e58d83?action=share&source=collection_link&creator=10380663"
+	},
+	"item": [
+		{
+			"name": "Sprint1TP4Superheroes",
+			"item": [
+				{
+					"name": "Obtener Superheroe por ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3005/superheroes/id/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3005",
+							"path": [
+								"superheroes",
+								"id",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Superheroes por atributo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3005/superheroes/atributo/nombreSociedad/vigilante",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3005",
+							"path": [
+								"superheroes",
+								"atributo",
+								"nombreSociedad",
+								"vigilante"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Superheroes mayores de 30",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3005/superheroes/edad/mayorA30",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3005",
+							"path": [
+								"superheroes",
+								"edad",
+								"mayorA30"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
